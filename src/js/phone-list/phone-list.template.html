@@ -1,0 +1,29 @@
+<p>
+  <form class="form-inline">
+    <div class="form-group">
+      <select class="form-control" ng-model="$ctrl.filterField">
+        <option>Name</option>
+        <option>Price</option>
+        <option>Memory</option>
+        <option>Camera</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <input class="form-control" type="text" ng-model="$ctrl.filterText">
+    </div>
+  </form>
+</p> 
+<table class="table table-hover table-cursor-pointer">
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Memory</th>
+    <th>Camera</th>
+  </tr>
+  <tr ng-repeat="phone in $ctrl.phones | phoneFilter : $ctrl.filterField : $ctrl.filterText"  ng-link="['PhoneDetail', {id: phone.id}]">
+    <td>{{phone.name}}</td>
+    <td>{{phone.price}}</td>
+    <td>{{phone.memory}}</td>
+    <td>{{phone.camera}}</td>
+  </tr>
+</table>

@@ -1,0 +1,39 @@
+{
+    "phones": [
+        {
+            "name": "Apple iPhone 7 32Gb",
+            "price": "44040",
+            "memory": "32",
+            "camera": "12",
+            "id": "0"
+        },
+        {
+            "name": "Apple iPhone 7 128Gb",
+            "price": "49880",
+            "memory": "128",
+            "camera": "13",
+            "id": "1"
+        },
+        {
+            "name": "Apple iPhone 6S 32Gb",
+            "price": "35800",
+            "memory": "32",
+            "camera": "12",
+            "id": "2"
+        },
+        {
+            "name": "Samsung Galaxy S7 32Gb",
+            "price": "34990",
+            "memory": "32",
+            "camera": "10",
+            "id": "3"
+        },
+        {
+            "name": "Samsung Galaxy S7 Edge 32Gb",
+            "price": "39490",
+            "memory": "32",
+            "camera": "11",
+            "id": "4"
+        }
+    ]
+}
