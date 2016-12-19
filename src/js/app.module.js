@@ -1,6 +1,7 @@
 angular.module('phonecatApp', [
   'ngComponentRouter',
-  'phoneList'
+  'phoneList',
+  'ui.bootstrap'
 ])
 // .config(function($locationProvider) {
 //   $locationProvider.html5Mode(true);
@@ -21,14 +22,5 @@ angular.module('phonecatApp', [
     {path: '/phones/...', name: 'Phones', component: 'phones', useAsDefault: true}
   ]
 })
-// .component('phoneMenu', {
-//   template: `
-//     <nav>
-//       <a ng-link="['PhoneList']">Phone list</a>
-//     </nav>
-//   `,
-//   $routeConfig: [
-//     {path: '/...', name: 'PhonecatApp', component: 'phonecatApp', useAsDefault: true}
-//   ]
-// })
+
 ;

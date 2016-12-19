@@ -19,7 +19,9 @@ $btn-default-border:             $lighten-blue !default;
   cursor:pointer;
 }
 
-
+.ng-invalid.ng-dirty {
+  border-color: red;
+}
 
 .errors{
   margin-top: 30px;
