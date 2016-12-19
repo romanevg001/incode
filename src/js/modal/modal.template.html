@@ -1,28 +1,28 @@
 <div class="modal-body">
       <h2>Order for {{$ctrl.resolve.modalData.name}}</h2>
-      <form class="form-horizontal" ng-submit="send()" name="phoneOrder">
+      <form class="form-horizontal" ng-submit="$ctrl.send()" name="phoneOrder">
             <div class="form-group">
                   <label class="col-sm-2 control-label">Имя: </label>
                   <div class="col-sm-10">
-                        <input class="form-control" type="text" ng-model="$ctrl.modalData.user.name" required>
+                        <input class="form-control" type="text" ng-model="$ctrl.user.name" required>
                   </div>
             </div>
             <div class="form-group">
                   <label class="col-sm-2 control-label">Email: </label>
                   <div class="col-sm-10">
-                        <input class="form-control" type="email" ng-model="$ctrl.modalData.user.email" required  ng-pattern="/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/">
+                        <input class="form-control" type="email" ng-model="$ctrl.user.email" required  ng-pattern="/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/">
                   </div>
             </div>
             <div class="form-group">
                   <label class="col-sm-2 control-label">Адрес: </label>
                   <div class="col-sm-10">
-                        <input class="form-control" type="text" ng-model="$ctrl.modalData.user.address" required>
+                        <input class="form-control" type="text" ng-model="$ctrl.user.address" required>
                   </div>
             </div>
             <div class="form-group">
                   <label class="col-sm-2 control-label">VK: </label>
                   <div class="col-sm-10">
-                        <input class="form-control" type="text" ng-model="$ctrl.modalData.user.link" ng-pattern="/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/">
+                        <input class="form-control" type="text" ng-model="$ctrl.user.link" ng-pattern="/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/">
                   </div>
             </div>
                   <button class="btn btn-warning pull-right" type="button" ng-click="$ctrl.handleClose()">Close </button>

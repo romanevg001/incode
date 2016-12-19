@@ -34,7 +34,6 @@ angular.module('phoneList')
           component: "phonecatModal",
           resolve: {
             modalData: ()=>{
-              console.log(this.phone)
                return this.phone;
             }
           }

@@ -6,22 +6,15 @@
       resolve: "<"
     },
     controller: function() {    
-      
-      // this.phone = this.resolve.modalData;
-      // console.log(this.phone);
 
       this.handleClose = () =>{
         this.modalInstance.close();
       };
 
-      this.send = function() {
-         console.log("in handle dismiss");
+      this.send = () =>{
+
         this.modalInstance.close();
       }
 
-    //   $ctrl.handleDismiss = function() {
-    //     console.info("in handle dismiss");
-    //     $ctrl.modalInstance.dismiss("cancel");
-    //   };
     }
   });
