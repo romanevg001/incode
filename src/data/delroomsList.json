@@ -1,9 +1,0 @@
-{
-    "rooms": [
-     
-        {
-            "name": "Flowers",
-            "id": "getFlowersRoom"
-        }
-    ]
-}
