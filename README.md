@@ -1,4 +1,4 @@
-# simply
+# inCode
 
 ## Install
 ```bash
