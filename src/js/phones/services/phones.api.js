@@ -1,6 +1,6 @@
-angular.module('phoneList')
+angular.module('phones')
 
-.service('phoneService',function(api, $http){
+.service('phoneApi',function(api, $http){
   return {
     getPhones: function(){
       return $http({

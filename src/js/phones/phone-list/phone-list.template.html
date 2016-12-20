@@ -1,7 +1,7 @@
 <p>
   <form class="form-inline">
     <div class="form-group">
-      <select class="form-control" ng-model="$ctrl.filterField">
+      <select class="form-control" ng-model="$ctrl.filterBy">
         <option>Name</option>
         <option>Price</option>
         <option>Memory</option>
@@ -9,7 +9,7 @@
       </select>
     </div>
     <div class="form-group">
-      <input class="form-control" type="text" ng-model="$ctrl.filterText">
+      <input class="form-control" type="text" ng-model="$ctrl.filterField">
     </div>
   </form>
 </p> 
@@ -20,7 +20,7 @@
     <th>Memory</th>
     <th>Camera</th>
   </tr>
-  <tr ng-repeat="phone in $ctrl.phones | phoneFilter : $ctrl.filterField : $ctrl.filterText"  ng-link="['PhoneDetail', {id: phone.id}]">
+  <tr ng-repeat="phone in $ctrl.phones | phoneListFilter : $ctrl.filterBy : $ctrl.filterField"  ng-link="['PhoneDetail', {id: phone.id}]">
     <td>{{phone.name}}</td>
     <td>{{phone.price}}</td>
     <td>{{phone.memory}}</td>
